@@ -1,0 +1,10 @@
+--- source/src/viacamcontroller.cpp	1969-12-31 16:00:01.000000000 -0800
++++ patchedsrc/src/viacamcontroller.cpp	2018-03-21 22:03:12.135531633 -0700
+@@ -230,7 +230,7 @@
+ 
+ 			wxSingleChoiceDialog choiceDlg(
+ 				NULL, _("Choose the camera to use"), _T("Enable Viacam"), strArray, 
+-				(char**)NULL, wxDEFAULT_DIALOG_STYLE | wxOK | wxCANCEL | wxCENTRE);
++				NULL, wxDEFAULT_DIALOG_STYLE | wxOK | wxCANCEL | wxCENTRE);
+ 
+ 			if (choiceDlg.ShowModal ()!= wxID_OK) return NULL;

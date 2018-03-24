@@ -1,0 +1,11 @@
+--- source/src/Makefile.am	1969-12-31 16:00:01.000000000 -0800
++++ patchedsrc/src/Makefile.am	2018-03-21 22:42:26.191403718 -0700
+@@ -103,8 +103,6 @@
+ bin_PROGRAMS = eviacam eviacamloader
+ 
+ eviacamloader_SOURCES = eviacamloader.c
+-install-exec-hook:
+-	chmod u+s $(DESTDIR)$(bindir)/eviacamloader
+ 
+ # the application source, library search path, and link libraries
+ eviacam_SOURCES = wgetkey.cpp \

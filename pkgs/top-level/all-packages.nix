@@ -20099,6 +20099,12 @@ with pkgs;
 
   electricsheep = callPackage ../misc/screensavers/electricsheep { };
 
+  eviacam = callPackage ../misc/eviacam {
+    wxgtk = wxGTK31;
+    inherit (xorg) libXext libXtst;
+    opencv3 = opencv3.override { enableGtk2 = true; };
+  };
+
   flam3 = callPackage ../tools/graphics/flam3 { };
 
   glee = callPackage ../tools/graphics/glee { };
